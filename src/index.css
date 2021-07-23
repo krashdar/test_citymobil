@@ -1,13 +1,137 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.text {
+  margin: auto;
+  font-family: Citymobil_v0-2;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 44px;
+  color: #707070;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+header {
+  width: 100%;
+  height: 128px;
+  display: flex;
+  background-color: #F2F3F4;
 }
+
+footer {
+  width: 100%;
+  height: 128px;
+  display: flex;
+  background-color: #F2F3F4;
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  display: flex;
+}
+main .sidebar {
+  width: 224px;
+  height: 670px;
+  display: flex;
+  background-color: #E4E5E6;
+  mix-blend-mode: normal;
+  box-shadow: inset 0px -1px 0px rgba(150, 150, 150, 0.25);
+}
+main #root {
+  padding: 32px 40px;
+  max-height: 606px;
+}
+main #root .searchbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 42px;
+}
+main #root .searchbar .search {
+  display: flex;
+  width: 80%;
+}
+main #root .searchbar .search__icon {
+  margin: 13px -20px 13px 20px;
+}
+main #root .searchbar input {
+  padding-left: 25px;
+  background: rgba(240, 242, 244, 0.5);
+  border: 1px solid #DEE5EB;
+  box-sizing: border-box;
+  width: 100%;
+  box-shadow: inset -1px 0px 0px rgba(198, 209, 221, 0.5);
+}
+main #root .searchbar button {
+  font-family: IBM Plex Mono;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 68px;
+  background-color: #7B8395;
+  color: #FFFFFF;
+  border: none;
+  cursor: pointer;
+}
+main #root .table {
+  margin: 16px 0;
+  max-height: 500px;
+  overflow-y: auto;
+}
+main #root .table #table th, main #root .table #table td {
+  border: 1px solid #DEE5EB;
+  box-sizing: border-box;
+  margin: 0;
+}
+main #root .table #table th {
+  width: 172px;
+  height: 48px;
+  font-family: IBM Plex Mono;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  color: #7B8395;
+  background: rgba(240, 242, 244, 0.5);
+  box-shadow: inset -1px 0px 0px rgba(198, 209, 221, 0.5);
+  cursor: pointer;
+}
+main #root .table #table td:first-of-type {
+  text-align: left;
+}
+main #root .table #table td {
+  font-family: IBM Plex Mono;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 16px;
+  color: #1F232E;
+  text-align: center;
+}
+main #root .table #table .cellWithValue {
+  cursor: pointer;
+}
+main #root .resultItem {
+  height: 42px;
+  width: 100%;
+  background: rgba(240, 242, 244, 0.5);
+  border: 1px solid #DEE5EB;
+  box-sizing: border-box;
+  box-shadow: inset -1px 0px 0px rgba(198, 209, 221, 0.5);
+  padding: 10px;
+}
+main #root .resultItem .text {
+  font-family: IBM Plex Mono;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #7B8395;
+}
+
+/*# sourceMappingURL=index.css.map */
